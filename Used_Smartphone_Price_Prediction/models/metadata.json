@@ -1,0 +1,54 @@
+{
+  "target_column": "normalized_used_price",
+  "feature_columns": [
+    "device_brand",
+    "os",
+    "screen_size",
+    "4g",
+    "5g",
+    "rear_camera_mp",
+    "front_camera_mp",
+    "internal_memory",
+    "ram",
+    "battery",
+    "weight",
+    "days_used",
+    "normalized_new_price",
+    "phone_age_years"
+  ],
+  "numeric_features": [
+    "screen_size",
+    "rear_camera_mp",
+    "front_camera_mp",
+    "internal_memory",
+    "ram",
+    "battery",
+    "weight",
+    "days_used",
+    "normalized_new_price",
+    "phone_age_years"
+  ],
+  "categorical_features": [
+    "device_brand",
+    "os",
+    "4g",
+    "5g"
+  ],
+  "model_name": "Gradient Boosting",
+  "test_metrics": {
+    "MAE": 0.17563047089305528,
+    "MSE": 0.0473718106856367,
+    "RMSE": 0.21765066203813097,
+    "R2": 0.8540243093918422
+  },
+  "target_note": "Prediction is in the original target column's unit. Verify dataset documentation.",
+  "best_random_forest_parameters": {
+    "model__n_estimators": 350,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 1,
+    "model__max_features": 0.8,
+    "model__max_depth": 10
+  },
+  "excluded_id_columns": [],
+  "excluded_constant_columns": []
+}

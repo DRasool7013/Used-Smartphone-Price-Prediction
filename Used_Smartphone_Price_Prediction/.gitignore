@@ -4,7 +4,4 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .DS_Store
-models/*.joblib
-models/metadata.json
 data/*.csv
-!data/README.md
